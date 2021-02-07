@@ -1,0 +1,225 @@
+button
+    width: 123px
+    height: 43px
+    outline: none
+    text-transform: uppercase
+    font-size: 12px
+    cursor: pointer
+
+div.arrow-next img
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+        filter: brightness(300%)
+
+div.arrow-previous img
+    cursor: pointer
+    transition: 0.3s
+    &:hover
+        filter: brightness(300%)
+
+div.item-content-header button
+    border-radius: 8px
+    background: $color-black
+    border: 0px
+    font-family: Roboto
+    color: $color-yellow
+    transition: 0.5s
+    &:hover
+        color: #000000
+        background: $color-yellow
+
+ul.menu-list
+    display: flex
+
+    li
+        margin-right: 36px
+        padding: 10px
+        border-radius: 10px 10px 0px 0px
+        font-family: $font-roboto
+        font-weight: $font-bold
+        text-transform: uppercase
+        position: relative
+        transition: 0.2s
+
+        a
+            color: #FFFFFF
+
+        &:first-child:hover
+            background: $color-yellow
+            color: $color-black
+            a
+                color: #000000
+
+            div.dropping-list-menu
+                opacity: 1
+                pointer-events: auto   
+
+
+div.dropping-list-menu
+    text-align: left
+    background: $color-yellow
+    border-radius: 0px 10px 10px 10px
+    position: absolute
+    left: 0
+    top: 100%
+    z-index: 100
+    width: 220px
+    opacity: 0
+    transition: 0.2s
+    pointer-events: none
+
+    ul
+        margin: 0px
+        padding: 0px
+
+    li a
+        @include font-style-family
+        padding-top: 15px
+        color: $color-black !important
+        font-weight: bold
+
+
+div#content-categories button
+    border-radius: 8px
+    border: 3px solid $color-white
+    overflow: hidden
+    color: $color-white
+    background: rgba(202, 202, 202, 0.01)
+
+div.select-option
+    position: relative
+
+    div.select-head input
+        display: flex
+        align-items: center
+        justify-content: space-around
+        width: 143px
+        height: 43px
+        border: 1px solid $color-grey
+        border-radius: 5px
+        position: relative
+        margin: 0px
+        font-family: $font-roboto
+        font-size: 12px
+        font-weight: bold
+        text-transform: uppercase
+        cursor: pointer
+        margin: 0px
+        padding-left: 20px
+        color: #000000
+
+    input::-webkit-input-placeholder
+        color: #000000
+
+
+    div.body
+        display: none
+        position: absolute
+        top: 93%
+        left: 0
+        border-right: 1px solid #AFB0B9
+        border-bottom: 1px solid #AFB0B9
+        border-left: 1px solid #AFB0B9
+        background: #fff
+        width: 100%
+        z-index: 100
+        border-radius: 0px 0px 5px 5px
+
+        ul
+            text-align: left
+            list-style: none
+            padding: 0
+            margin: 0
+        li
+            padding: 10px 20px
+            font-size: 12px
+            font-weight: bold
+            transition: 0.1s
+            cursor: pointer
+            &:hover
+                background: #eee
+        &.show
+            display: block
+
+div.select-head
+    position: relative
+
+div.uparrow 
+    position: absolute
+    transform: translateY(-50%)
+    top: 55%
+    right: 10px
+
+div.item-pay button
+    width: 93px
+    height: 43px
+    background: $color-grey
+    color: $color-white
+    border-radius: 8px
+    border: 0px
+    margin-left: 10px
+    transition: 0.5s
+    font-family: $font-roboto
+
+    &:hover
+        background: $color-black
+        color: $color-yellow
+
+
+div#form-contact-us
+
+    @include flex-center
+    flex-wrap: wrap
+    flex-direction: column
+    text-align: center
+
+    button
+        height: 43px
+        margin-top: 21px
+        border-radius: 8px
+        border: 0px
+        background: $color-grey
+        color: $color-white
+        font-family: $font-roboto
+        margin-bottom: 84px
+        width: 100%
+        transition: 0.5s
+
+        &:hover
+            background: $color-black
+            color: $color-yellow
+            
+
+div#wrap-name
+    @include flex-between
+    flex-wrap: wrap
+
+div#form-contact-us
+
+    input
+        height: 43px
+        border-radius: 8px
+        border: 1px solid $color-grey
+        margin-top: 21px
+        outline: none
+        font-family: $font-roboto
+        text-transform: uppercase
+        font-style: italic
+        padding-left: 22px
+
+
+div#form-contact-us textarea
+    padding: 22px 22px 117px 22px
+    resize: none
+    margin-top: 21px
+    border-radius: 8px
+    border: 1px solid $color-grey
+    margin-top: 21px
+    color: $color-grey
+    outline: none
+    font-family: $font-roboto
+    text-transform: uppercase
+    font-style: italic
+    width: 100%
+

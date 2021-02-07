@@ -1,0 +1,336 @@
+body
+    margin: 0
+    padding: 0
+
+    *
+        box-sizing: border-box
+
+div.container-home
+    max-width: 2900px
+    margin: 0 auto
+
+div.swiper-slide img
+    min-width: 100%
+
+div.container
+    margin: 0 auto
+    max-width: 1200px
+    padding: 0px 15px
+
+
+div#menu-wrapper
+    @include flex-between
+    align-items: center
+    padding-top: 20px
+
+div.menu-burger
+    display: none
+            
+            
+div.item-menu
+    @include flex-center
+    align-items: center
+
+div.container-header
+    height: 980px
+    margin: auto
+    position: absolute
+    z-index: 44
+    top: 0
+    width: 100%
+
+
+div#header-content
+    @include flex-between
+    align-items: center
+    position: absolute
+    width: 100%
+    top: 50%
+    transform: translateY(-50%)
+    padding: 0px 15px
+
+section#categories
+    background-image: url('../../images/MountainsBackground.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+div.container-categories
+    margin: auto
+    max-width: 1150px
+
+
+div#content-categories
+    @include flex-between
+    flex-wrap: wrap
+    padding-bottom: 75px
+
+div.item-bike img.bike
+    width: 100%
+
+div.container-popular-bikes
+    margin: auto
+    max-width: 1875px
+
+
+
+section#popular-bikes
+    padding-top: 50px
+    
+    h2
+    text-align: center
+    text-transform: uppercase
+    font-family: $font-roboto
+    font-weight: bold
+    margin: 0px
+
+
+div#item-collections
+    @include flex-between
+    flex-wrap: wrap
+    padding-bottom: 34px
+
+
+div.scroll-icon
+    position: absolute
+    cursor: pointer
+    top: 80%
+    left: 50%
+    transform: translateX(-50%)
+
+
+div.item
+    width: 32%
+    position: relative
+
+    img
+        width: 100%
+
+
+div.item-pay
+    @include flex-between
+    align-items: center
+
+
+div.wrapper-option-and-btn
+    display: flex
+
+
+section#contact-us-block
+    background-image: url('../../images/BackgroundManHoldingBike.png')
+    background-repeat: no-repeat
+    background-size: cover
+
+
+div#wrapper-form
+    @include flex-center
+
+
+section#footer
+    background: $color-yellow
+
+    div.container
+        @include flex-between
+
+    ul
+        display: flex
+
+        li
+            font-family: $font-roboto
+            padding-right: 36px
+            @include font-size-weight
+
+            a
+                color: #000000
+
+            &:nth-child(4)
+                padding-right: 0px
+
+div.mob-menu
+    display: flex
+    justify-content: center
+    align-items: center
+    position: fixed
+    left: 100%
+    bottom: 0
+    height: 100%
+    padding: 30px
+    background: #fff
+    border-left: 1px solid #000
+    width: 100%
+    transition: 0.4s
+    z-index: 100
+    overflow: hidden
+    background-color: #000000
+
+div.mob-menu.show
+    left: 0
+    padding: 0
+    background-color: #000000
+
+div.exit
+    display: flex
+    justify-content: flex-end
+    margin: 0px 20px 40px 0px
+    
+    img
+        width: 30px
+        height: 30px
+
+nav.mob-menu-list 
+    a
+        color: #fcff19
+        font-family: $font-roboto
+        @include font-style-family
+        font-size: 45px
+
+    ul
+        text-align: center
+        padding: 0px
+        margin: 0px
+
+    li
+        margin-bottom: 20px
+
+
+div.logo-wrapper
+    display: flex
+    justify-content: space-around
+    margin-top: 60px
+
+    img
+        width: 60px
+        height: 60px
+        margin: 0px 20px
+
+div.exit
+    display: flex
+    justify-content: flex-end
+    
+    img
+        width: 30px
+        height: 30px
+
+
+div.menu-footer
+    background-color:#fcff19
+    position: relative
+
+div.menu-burger
+    display: none
+
+
+
+@media screen and (max-width: 800px)
+
+    div.container
+        display: none
+
+    div.swiper-slide img
+        height: 640px
+
+    div.scroll-icon
+        top: 55%
+
+    div#header-content
+        top: 35%
+
+
+    div.menu
+        display: block
+        background-color: #000000
+        position: relative
+
+    div.menu-burger
+        display: block
+        display: flex
+        justify-content: flex-end
+
+        img
+            padding: 15px
+
+
+    div#menu-wrapper
+        display: none
+
+    div#content-categories
+       justify-content: center
+
+    div.item
+        width: 80%
+        margin-bottom: 15px
+
+    section#popular-bikes
+        padding-top: 50px
+
+    div#item-collections
+        justify-content: center
+
+    div.item-bike
+        width: 80%
+
+    div.item-price
+        justify-content: space-around
+
+    div#form-contact-us
+        margin: 0px 30px
+
+        input
+            width: 100%
+
+    section#footer
+        display: none
+
+@media screen and (max-width: 500px)
+
+    div.swiper-slide img
+        height: 640px
+
+    div#header-content
+        transform: translateY(-70%)
+
+
+    div.arrow-next
+        display: none
+
+    div.arrow-previous
+        display: none
+
+    div.scroll-icon
+        top: 55%
+
+
+    div.item-pay
+        @include flex-center
+        flex-wrap: wrap
+        width: 100%
+
+    div.item-price
+        display: flex
+        padding: 10px
+        justify-content: space-around
+        width: 95%
+
+    
+    section#footer 
+        display: block
+        display: flex
+        justify-content: center
+        background-color: #000000
+
+        div.container img
+            display: none
+
+    section#footer ul
+        justify-content: center
+        flex-direction: column
+        text-align: center
+        margin: 10px 0px
+        padding: 0px
+
+        li  
+            margin: 10px
+            padding: 0px
+            font-size: 20px
+            font-weight: normal
+            a
+                color: $color-yellow

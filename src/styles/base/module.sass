@@ -1,0 +1,47 @@
+
+//Fonts
+@font-face
+    font-family: 'Roboto'
+    src: url('../../fonts/Roboto-Regular.ttf')
+    src: url('../../fonts/Roboto-Black.ttf')
+    src: url('../../fonts/Roboto-Bold.ttf')
+    src: url('../../fonts/Roboto-Thin.ttf')
+    src: url('../../fonts/Roboto-Medium.ttf')
+
+@font-face
+    font-family: 'MyriadProRegular'
+    src: url('../../fonts/MyriadPro-Regular.ttf')
+    src: url('../../fonts/MyriadPro-Light.ttf')
+
+$font-regular: normal
+$font-bold: bold
+$font-roboto: Roboto
+
+//Color
+$color-white: #ffffff
+$color-yellow: #fcff19
+$color-black: #000000
+$color-grey: #8f8f8f
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+
+@mixin flex-between
+    display: flex
+    justify-content: space-between
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+
+@mixin font-style-family
+    font-family: $font-roboto
+    margin: 0px
+
+
+@mixin font-size-weight
+    font-size: 15px
+    font-weight: bold
